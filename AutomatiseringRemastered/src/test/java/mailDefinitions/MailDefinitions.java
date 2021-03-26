@@ -65,10 +65,6 @@ public class MailDefinitions {
 		}
 		@Then("I will {string}")
 		public void i_will(String verify) throws InterruptedException {
-			//WebElement error1 = driver.findElement(By.className("!margin-bottom--lv3 no-transform center-on-medium"));
-			//WebElement error2 = driver.findElement(By.cssSelector(".invalid-error"));
-			//WebElement error3 = driver.findElement(By.cssSelector(".invalid-error"));
-			//WebElement error4 = driver.findElement(By.cssSelector(".invalid-error"));
 			
 			if(verify.equals(check)) {
 				assertEquals(verify, driver.findElement(By.cssSelector(".\\!margin-bottom--lv3")).getText());

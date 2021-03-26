@@ -1,4 +1,4 @@
-Feature: Create account
+Feature: I should be able to create an account on mailchimp.
 
 @mytag
 Scenario Outline:
