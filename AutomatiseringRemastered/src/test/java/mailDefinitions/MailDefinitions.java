@@ -40,7 +40,8 @@ public class MailDefinitions {
 		public void i_have_entered_an_into_the_email_slot(String email) {
 		    if(email.equals("email")) {
 		    	sendKeys(driver, By.id("email"), email + randomInt + "@gmail.com");
-		    }else if(email.equals("")) {
+		    }
+		    else if(email.equals("")) {
 		    	sendKeys(driver, By.id("email"), "");
 		    }
 		    
@@ -49,9 +50,11 @@ public class MailDefinitions {
 		public void i_have_also_entered_an_into_the_username_slot(String username) {
 		    if(username.equals("username")) {
 		    	sendKeys(driver, By.id("new_username"), username + randomInt);
-		    }else if(username.equals("longUsername")) {
+		    }
+		    else if(username.equals("longUsername")) {
 		    	sendKeys(driver, By.id("new_username"), repeated);
-		    }else if(username.equals("Adam653")) {
+		    }
+		    else if(username.equals("Adam653")) {
 		    	sendKeys(driver, By.id("new_username"), username);
 		    }
 		}
@@ -70,15 +73,18 @@ public class MailDefinitions {
 				assertEquals(verify, driver.findElement(By.cssSelector(".\\!margin-bottom--lv3")).getText());
 				Thread.sleep(2000);
 				driver.quit();
-			}else if(verify.equals(hundred)){
+			}
+			else if(verify.equals(hundred)){
 				assertEquals(verify, driver.findElement(By.cssSelector(".invalid-error")).getText());
 				Thread.sleep(2000);
 				driver.quit();
-			}else if(verify.equals(exists)) {
+			}
+			else if(verify.equals(exists)) {
 				assertEquals(verify, driver.findElement(By.cssSelector(".invalid-error")).getText());
 				Thread.sleep(2000);
 				driver.quit();
-			}else if(verify.equals(value)){
+			}
+			else if(verify.equals(value)){
 					assertEquals(verify, driver.findElement(By.cssSelector(".invalid-error")).getText());
 					Thread.sleep(2000);
 					driver.quit();
