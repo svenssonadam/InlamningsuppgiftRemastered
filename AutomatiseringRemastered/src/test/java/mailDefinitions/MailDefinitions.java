@@ -79,9 +79,9 @@ public class MailDefinitions {
 				Thread.sleep(2000);
 				driver.quit();
 			}else if(verify.equals(value)){
-				assertEquals(verify, driver.findElement(By.cssSelector(".invalid-error")).getText());
-				Thread.sleep(2000);
-				driver.quit();
+					assertEquals(verify, driver.findElement(By.cssSelector(".invalid-error")).getText());
+					Thread.sleep(2000);
+					driver.quit();
 			
 			}
 		}

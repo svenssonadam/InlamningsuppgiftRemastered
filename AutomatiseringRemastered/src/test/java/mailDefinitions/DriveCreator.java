@@ -12,15 +12,15 @@ public class DriveCreator {
 		WebDriver driver;
 		
 		if(browser.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Svens\\OneDrive\\Desktop\\Selenium\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:/Users/Svens/OneDrive/Desktop/Selenium/chromedriver.exe");
 			driver = new ChromeDriver();
 		
 		}else if(browser.equals("firefox")){
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Svens\\OneDrive\\Desktop\\Selenium\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:/Users/Svens/OneDrive/Desktop/Selenium/geckodriver.exe");
 			driver = new FirefoxDriver();
 		
 		}else{
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Svens\\OneDrive\\Desktop\\Selenium\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:/Users/Svens/OneDrive/Desktop/Selenium/geckodriver.exe");
 			driver = new EdgeDriver();
 		}
 
